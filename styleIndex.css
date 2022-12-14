@@ -20,3 +20,16 @@ min-height: 100vh;
     display: block;
     width: 100%;
 }
+.form__box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+.form__gender{
+ display: flex;
+ align-items: center;
+}
+.form__item--radio{
+margin-right: 8px;
+}
