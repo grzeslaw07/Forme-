@@ -1,35 +1,35 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-body{
-background-color: #42176a;
-color: aliceblue;
-font-family: Arial, Helvetica, sans-serif;
-display: flex;
-align-items: center;
-justify-content: center;
-min-height: 100vh;
+  box-sizing: border-box;
 }
-.form__item{
-    display: block;
-    width: 100%;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-.form__box{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin-bottom: 8px;
+body {
+  background-color: #42176a;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
-.form__gender{
- display: flex;
- align-items: center;
+.form__item {
+  display: block;
+  width: 100%;
 }
-.form__item--radio{
-margin-right: 8px;
+.form__box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+.form__gender {
+  display: flex;
+  align-items: center;
+}
+.form__item--radio {
+  margin: 8px;
 }
