@@ -20,8 +20,6 @@
             id="firstName"
             placeholder="Enter your name"
           />
-        </p>
-        <p>
           <label for="lastName">
             Your last name
             <input
@@ -31,6 +29,31 @@
               placeholder="Enter your last name"
             />
           </label>
+          <label for="mail">E-mail</label>
+          <input
+          class="form__item"
+          name="email"
+          id="email"
+          placeholder="Enter your e-mail"
+          type="email"
+          /> 
+          <label for="phone">Phone</label>
+          <input
+          class="form__item"
+          name="phone"
+          id="phone"
+          placeholder="Enter your phone number"
+          type="tel"
+          />
+        </p>
+        <p>
+          <label for="drink">Pick your favorite drink</label>
+          <select name="drink" id="drink">
+            <option value="drink-1">Tee</option>
+            <option value="drink-2">Coffee</option>
+            <option value="drink-3">Water</option>
+            <option value="drink-4">Alcohol</option>
+          </select>
         </p>
         <fieldset>
           <legend>Address</legend>
@@ -99,12 +122,29 @@
           </p>
         </fieldset>
         <p>
+          <label for="yourself"> Describe yourself</label>
+          <textarea name="yourself" id="yourself" cols="30" rows="10">Write somethinks interesting</textarea>
+        </p>
+         <p>
           <label for="file"> Attach your photo </label>
           <input 
           class="form__item"
           id="Photo"
           name="photo"
           type="file">
+        </p>
+        <p>
+          <label for="agreement"> You agree to evrythings</label>
+          <input
+           type="checkbox"
+           name="agreement"
+           checked
+           value="agree" >
+           <label for="send"> You agree to evrythings</label>
+           <input
+            type="submit"
+            name="send"
+            value="Send" >
         </p>
       </form>
     </main>
