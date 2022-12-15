@@ -9,8 +9,8 @@
     <link href="styleIndex.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main>
-      <h1>Hello I'm Grzegorz</h1>
+    <main class="main">
+      <h1 class="h1">Competition for my  future girlfriend </h1>
       <form class="form">
         <p>
           <label for="firstName"> Your name</label>
@@ -47,8 +47,8 @@
           />
         </p>
         <p>
-          <label for="drink">Pick your favorite drink</label>
-          <select name="drink" id="drink">
+          <label class="form__item-sleect" for="drink">Pick your favorite drink</label>
+          <select class="form__item-sleect--window" name="drink" id="drink">
             <option value="drink-1">Tee</option>
             <option value="drink-2">Coffee</option>
             <option value="drink-3">Water</option>
@@ -64,7 +64,7 @@
                 class="form__item"
                 name="streetName"
                 id="streetName"
-                placeholder="Please enter street name"
+                placeholder="Please enter your street name"
               />
             </label>
             <label>
@@ -81,7 +81,7 @@
         <fieldset>
           <legend class="form">What is your gender</legend>
           <p>
-            <div class="form__box">
+            <div class="form__radio--box">
                 <div class="form__gender">
                   <label for="men"> Men </label>
                 </div>
@@ -95,7 +95,7 @@
                   />
               </div>
              </div>
-             <div class="form__box">
+             <div class="form__radio--box">
                 <div class="form__gender">
                   <label for="women">Women </label>
                 </div>
@@ -109,9 +109,9 @@
                   />
                </div>
               </div>
-              <label for="">How pretty are you?</label>
+              <label for="">How are you pretty?</label>
               <input 
-              class="form__item"
+              class="form__item--range"
               type="range"
               id="range1"
               name="range"
@@ -122,31 +122,41 @@
           </p>
         </fieldset>
         <p>
-          <label for="yourself"> Describe yourself</label>
-          <textarea name="yourself" id="yourself" cols="30" rows="10">Write somethinks interesting</textarea>
+          <label class="form__item-textarea--title" for="yourself"> Describe yourself</label>
+          <textarea 
+          class="form__item-textarea--description"
+          name="yourself" 
+          id="yourself" 
+          cols="30"
+          rows="10">Write somethinks interesting</textarea>
         </p>
          <p>
-          <label for="file"> Attach your photo </label>
+          <label class="form__item-file--title" for="file"> Attach your photo </label>
           <input 
-          class="form__item"
+          class="form__item-file--buttom"
           id="Photo"
           name="photo"
           type="file">
         </p>
         <p>
-          <label for="agreement"> You agree to evrythings</label>
+          <label class="form__item-checkbox--description" for="agreement"> You agree to evrythings</label>
           <input
+          class="form__item-checkbox--buttom"
            type="checkbox"
            name="agreement"
            checked
            value="agree" >
-           <label for="send"> You agree to evrythings</label>
+        </p>
+        <p>
+           <label class="form__item-submit--description" for="send"> You agree to evrythings</label>
            <input
+           class="form__item-submit--buttom"
             type="submit"
             name="send"
             value="Send" >
         </p>
       </form>
     </main>
+
   </body>
 </html>
