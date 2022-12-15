@@ -8,9 +8,10 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="styleIndex.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <main class="main">
-      <h1 class="h1">Competition for my  future girlfriend </h1>
+      <h1 class="h1">Competition for my future girlfriend</h1>
       <form class="form">
         <p>
           <label for="firstName"> Your name</label>
@@ -31,23 +32,25 @@
           </label>
           <label for="mail">E-mail</label>
           <input
-          class="form__item"
-          name="email"
-          id="email"
-          placeholder="Enter your e-mail"
-          type="email"
-          /> 
+            class="form__item"
+            name="email"
+            id="email"
+            placeholder="Enter your e-mail"
+            type="email"
+          />
           <label for="phone">Phone</label>
           <input
-          class="form__item"
-          name="phone"
-          id="phone"
-          placeholder="Enter your phone number"
-          type="tel"
+            class="form__item"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+            type="tel"
           />
         </p>
         <p>
-          <label class="form__item-sleect" for="drink">Pick your favorite drink</label>
+          <label class="form__item-sleect" for="drink"
+            >Pick your favorite drink</label
+          >
           <select class="form__item-sleect--window" name="drink" id="drink">
             <option value="drink-1">Tee</option>
             <option value="drink-2">Coffee</option>
@@ -80,83 +83,95 @@
         </fieldset>
         <fieldset>
           <legend class="form">What is your gender</legend>
-          <p>
-            <div class="form__radio--box">
-                <div class="form__gender">
-                  <label for="men"> Men </label>
-                </div>
-                <div class="form__gender">
-                  <input
-                  class="form__item--radio"
-                  name="gender"
-                  type="radio"
-                  value="men"
-                  id="men"
-                  />
-              </div>
-             </div>
-             <div class="form__radio--box">
-                <div class="form__gender">
-                  <label for="women">Women </label>
-                </div>
-                <div class="form__gender">
-                  <input
-                  class="form__item--radio"
-                  name="gender"
-                  type="radio"
-                  value="women"
-                  id="women"
-                  />
-               </div>
-              </div>
-              <label for="">How are you pretty?</label>
-              <input 
-              class="form__item--range"
-              type="range"
-              id="range1"
-              name="range"
-              min="o"
-              max="20"
-              step="1"
-              >
-          </p>
+          <p></p>
+          <div class="form__radio--box">
+            <div class="form__gender">
+              <label for="men"> Men </label>
+            </div>
+            <div class="form__gender">
+              <input
+                class="form__item--radio"
+                name="gender"
+                type="radio"
+                value="men"
+                id="men"
+              />
+            </div>
+          </div>
+          <div class="form__radio--box">
+            <div class="form__gender">
+              <label for="women">Women </label>
+            </div>
+            <div class="form__gender">
+              <input
+                class="form__item--radio"
+                name="gender"
+                type="radio"
+                value="women"
+                id="women"
+              />
+            </div>
+          </div>
+          <label for="range">How are you pretty?</label>
+          <input
+            class="form__item--range"
+            type="range"
+            id="range1"
+            name="range"
+            min="o"
+            max="20"
+            step="1"
+          />
         </fieldset>
         <p>
-          <label class="form__item-textarea--title" for="yourself"> Describe yourself</label>
-          <textarea 
-          class="form__item-textarea--description"
-          name="yourself" 
-          id="yourself" 
-          cols="30"
-          rows="10">Write somethinks interesting</textarea>
-        </p>
-         <p>
-          <label class="form__item-file--title" for="file"> Attach your photo </label>
-          <input 
-          class="form__item-file--buttom"
-          id="Photo"
-          name="photo"
-          type="file">
+          <label class="form__item-textarea--title" for="yourself">
+            Describe yourself</label
+          >
+          <textarea
+            class="form__item-textarea--description"
+            name="yourself"
+            id="yourself"
+            cols="30"
+            rows="10"
+          >
+Write somethinks interesting</textarea
+          >
         </p>
         <p>
-          <label class="form__item-checkbox--description" for="agreement"> You agree to evrythings</label>
+          <label class="form__item-file--title" for="file">
+            Attach your photo
+          </label>
           <input
-          class="form__item-checkbox--buttom"
-           type="checkbox"
-           name="agreement"
-           checked
-           value="agree" >
+            class="form__item-file--buttom"
+            id="Photo"
+            name="photo"
+            type="file"
+          />
         </p>
         <p>
-           <label class="form__item-submit--description" for="send"> You agree to evrythings</label>
-           <input
-           class="form__item-submit--buttom"
+          <label class="form__item-checkbox--description" for="agreement">
+            You agree to evrythings</label
+          >
+          <input
+            class="form__item-checkbox--buttom"
+            type="checkbox"
+            name="agreement"
+            checked
+            value="agree"
+          />
+        </p>
+        <p>
+          <label class="form__item-submit--description" for="send">
+            You agree to evrythings</label
+          >
+          <input
+            class="form__item-submit--buttom"
             type="submit"
             name="send"
-            value="Send" >
+            value="Send"
+          />
         </p>
       </form>
     </main>
-
   </body>
 </html>
